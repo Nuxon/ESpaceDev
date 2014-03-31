@@ -1,8 +1,10 @@
 package tests;
 
 import java.awt.Canvas;
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.util.Random;
 
 import javax.swing.JFrame;
 
@@ -29,13 +31,14 @@ public class GraphicsTest extends Canvas{
 	}
 	
 	public void paint(Graphics g) {
-		int x = 0;
-		for(int i = 0; i < planets.length; i++, x+= 50) {
-			g.drawOval(planets[i].getX()+x, planets[i].getY(), planets[i].getWidth(), planets[i].getHeight());
-			g.drawString(planets[i].getName(), planets[i].getX()+x, planets[i].getY());
-			g.fillOval(planets[i].getX()+x, planets[i].getY(), planets[i].getWidth(), planets[i].getHeight());
+		for(int i = 0; i < planets.length; i++) {
+			g.drawOval(planets[i].getX(), planets[i].getY(), planets[i].getWidth(), planets[i].getHeight());
+			g.drawString(planets[i].getName(), planets[i].getX(), planets[i].getY());
+			g.setColor(new Color(r.nextInt(100),r.nextInt(100),r.nextInt(100)));
+			g.fillOval(planets[i].getX(), planets[i].getY(), planets[i].getWidth(), planets[i].getHeight());
 		}
 	}
+	Random r = new Random();
 	Planet[] planets;
 	JFrame frame;
 	

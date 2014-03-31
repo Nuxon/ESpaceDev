@@ -4,7 +4,7 @@ public class Planet extends AstronomicalObject{
 
 	public Planet(String name, String[] history, double weight,
 			double age, double radius, int x, int y) {
-		super(name, x, y);
+		super(name, x, y, (int)radius, (int)radius);
 		
 		if(history == null) this.history = new String[]{"<---->"};
 		

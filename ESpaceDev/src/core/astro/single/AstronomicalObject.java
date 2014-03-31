@@ -4,7 +4,7 @@ import core.Dot;
 
 public class AstronomicalObject extends Dot{
 
-	public AstronomicalObject(String name, int x, int y) {
+	public AstronomicalObject(String name, int width, int height, int x, int y) {
 		super(x, y);
 		
 		this.name = name;
