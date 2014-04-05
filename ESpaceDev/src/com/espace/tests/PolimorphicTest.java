@@ -1,9 +1,9 @@
-package tests;
+package com.espace.tests;
 
-import core.Dot;
-import core.astro.single.Asteroid;
-import core.astro.single.AstronomicalObject;
-import core.astro.single.Planet;
+import com.espace.Dot;
+import com.espace.astro.single.Asteroid;
+import com.espace.astro.single.AstronomicalObject;
+import com.espace.astro.single.Planet;
 
 public class PolimorphicTest {
 	

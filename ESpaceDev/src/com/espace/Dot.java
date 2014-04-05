@@ -1,4 +1,4 @@
-package core;
+package com.espace;
 
 public class Dot {
 	

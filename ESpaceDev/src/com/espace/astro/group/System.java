@@ -1,4 +1,4 @@
-package core.astro.group;
+package com.espace.astro.group;
 
 //System <=
 public class System {

@@ -1,6 +1,6 @@
-package core.astro.single;
+package com.espace.astro.single;
 
-import core.Dot;
+import com.espace.Dot;
 
 public class AstronomicalObject extends Dot{
 

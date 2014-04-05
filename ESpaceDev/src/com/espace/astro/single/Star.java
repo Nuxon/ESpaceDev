@@ -1,4 +1,4 @@
-package core.astro.single;
+package com.espace.astro.single;
 
 public class Star extends AstronomicalObject{
 
